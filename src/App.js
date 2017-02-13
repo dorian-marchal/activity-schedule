@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const activities = [
+  {
+    name: 'Accordage',
+    durationMin: 2,
+  },
+  {
+    name: 'Rythme',
+    ratio: 0.25,
+  },
+  {
+    name: 'Accords',
+    ratio: 0.1,
+  },
+];
+
 class App extends Component {
   render() {
     return (
@@ -11,7 +26,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Activity Schedule
         </p>
       </div>
     );
